@@ -187,8 +187,11 @@ foreach ($key in ($globalData.Keys | Sort-Object)) {
 Write-Host "`n--------------------------------------------"
 Write-Host "Global Summary:" -ForegroundColor Green
 Write-Host (" Total frames: {0}" -f $totalFrames)
-Write-Host (" Total failed frames: {0}" -f $totalFailed)
+if ($totalFailed -gt 0) {
+    Write-Host (" Total failed frames: {0}" -f $totalFailed)
+}
 Write-Host (" Total exposure: {0}s | {1}min | {2:N2}h" -f ([int]$totalSeconds), ([int]($totalSeconds/60)), ($totalSeconds/3600))
 Write-Host "--------------------------------------------`n"
 Write-Host "Press Enter to close..."
 Read-Host
+
