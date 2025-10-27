@@ -28,7 +28,6 @@ It automatically scans your session folders, sums up all exposure data, and give
    `SeeStar_AstroStat_3.5_Deluxe.ps1`
 2. Place it inside your **MyWork** folder (or wherever you store all your star captures).
 3. Right-click the file → **“Run with PowerShell.”**
-4. Sit back and enjoy your colorful galaxy stats 🌠
 
 ---
 
