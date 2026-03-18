@@ -75,7 +75,7 @@ It automatically scans your session folders, sums up all exposure data, and give
 
 ## 🖥️ Example Output
 ```
-=== SeeStar AstroStat 3.5 Deluxe ===
+=== SeeStar AstroStat 4.0 Deluxe ===
 C2025 A6 (Lemmon)         |  846 frames |    8 940s   2,48h | 798x10s 89%, 48x20s 11% 
 IC 1848                   |   41 frames |      410s   0,11h | 41x10s 100% Failed: 6
 IC 5146                   |  110 frames |    2 640s   0,73h | 27x10s 10%, 27x20s 20%, 51x30s 58%, 5x60s 11% Failed: 23
