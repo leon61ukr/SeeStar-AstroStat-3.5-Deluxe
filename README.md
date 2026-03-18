@@ -1,4 +1,4 @@
-# 🌌 SeeStar AstroStat 3.5 Deluxe
+# 🌌 SeeStar AstroStat 4.0 Deluxe
 
 **SeeStar AstroStat** is a smart and colorful PowerShell utility that analyzes astrophotography session data from **SeeStar S30/S50** or any FIT/FITS-based imaging workflow.  
 It automatically scans your session folders, sums up all exposure data, and gives you a clean, human-readable summary — including per-target and global stats.
@@ -19,13 +19,63 @@ It automatically scans your session folders, sums up all exposure data, and give
   - ❤️ Failed frames count
 - 🧩 Combines stats for `_sub` + `_mosaic_sub` sessions of the same target  
 - 🪶 Lightweight and standalone — no dependencies or installation needed
-
+- 📊 Automatically sorts objects by total exposure time (longest first)  
+- 📝 Saves session summaries to `_logs` folder  
+- 🧠 Detects unchanged runs and avoids duplicate logs  
+- 🔄 Tracks changes between runs (added/removed exposure time per object)  
+- 📈 Displays exposure differences in hours between sessions  
+- ⚡ Includes lightweight loading animation during processing  
 ---
+
+## 🆕 What’s New in 4.0
+⚡ Loading animation (spinner)
+- Added an animated Calculating... indicator while processing folders
+
+📊 Sorting by total exposure time
+- Objects are now automatically sorted by total exposure time (descending)
+→ longest / most significant sessions appear first
+
+📝 Full session logging
+- The script now saves results to a _logs folder:
+- automatic folder creation
+- timestamped log files (yyyy-MM-dd-HHmm.txt)
+- UTF-8 encoding without BOM
+  
+🧠 Smart log deduplication (SHA-256)
+- A new log is NOT created if:
+- no data has changed
+- comparison is done using hash
+
+🔄 Change tracking between runs
+- Displays differences between current and previous runs:
+- ➕ added exposure time per object
+- ➖ removed objects
+🔼 / 🔽 exposure changes
+
+📈 Per-object exposure delta (in hours)
+- Calculates exposure change in hours for each object:
+- M31 : +1.25 h
+- M42 : -0.40 h
+- REMOVED: M51
+
+🎯 Improved output consistency
+- unified logic for console and log output
+- synchronized line formatting
+
+🧹 Cleaner output logic
+- reduced code duplication
+- unified handling of failed frames
+- more stable output format
+
+🔧 Refactored data merging
+- Improved merging logic for _sub + _mosaic_sub:
+- cleaner exposure merging
+- fewer edge-case issues
 
 ## 🚀 How to Use
 
 1. Download or copy the script file —  
-   `SeeStar_AstroStat_3.5_Deluxe.ps1`
+   `SeeStar_AstroStat_4.0_Deluxe.ps1`
 2. Place it inside your **MyWork** folder (or wherever you store all your star captures).
 3. Right-click the file → **“Run with PowerShell.”**
 
@@ -51,6 +101,21 @@ Global Summary:
  Total failed frames: 1228
  Total exposure: 221580s | 3693min | 61,55h
 --------------------------------------------
+
+Changes from last script execution:
+ IC 1805 : -0.01 h
+ IC 2574 : +1.45 h
+ IC 417 : +0.57 h
+ IC 447 : +0.06 h
+ M 101 : +1.18 h
+ M 102 : +0.2 h
+ M 106 : +0.05 h
+ M 109 : +1 h
+ M 63 : +0.66 h
+ M 78 : +1.26 h
+ NGC 2403 : +2.11 h
+ NGC 4236 : +1.02 h
+ NGC 5907 : +0.24 h
 ```
 
 ---
@@ -66,7 +131,7 @@ Global Summary:
 ## 🪐 Author
 
 **Developed by:** LeoN61ukr
-**Version:** 3.5 Deluxe  
+**Version:** 4.0 Deluxe  
 **License:** MIT  
 
 > Made for all SeeStar explorers who love both stars and stats 🌟
