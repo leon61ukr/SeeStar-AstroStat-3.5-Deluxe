@@ -28,49 +28,41 @@ It automatically scans your session folders, sums up all exposure data, and give
 ---
 
 ## 🆕 What’s New in 4.0
-⚡ Loading animation (spinner)
-- Added an animated Calculating... indicator while processing folders
-
-📊 Sorting by total exposure time
-- Objects are now automatically sorted by total exposure time (descending)
-→ longest / most significant sessions appear first
-
-📝 Full session logging
-- The script now saves results to a _logs folder:
-- automatic folder creation
-- timestamped log files (yyyy-MM-dd-HHmm.txt)
-- UTF-8 encoding without BOM
-  
-🧠 Smart log deduplication (SHA-256)
-- A new log is NOT created if:
-- no data has changed
-- comparison is done using hash
-
-🔄 Change tracking between runs
-- Displays differences between current and previous runs:
-- ➕ added exposure time per object
-- ➖ removed objects
-🔼 / 🔽 exposure changes
-
-📈 Per-object exposure delta (in hours)
-- Calculates exposure change in hours for each object:
-- M31 : +1.25 h
-- M42 : -0.40 h
-- REMOVED: M51
-
-🎯 Improved output consistency
-- unified logic for console and log output
-- synchronized line formatting
-
-🧹 Cleaner output logic
-- reduced code duplication
-- unified handling of failed frames
-- more stable output format
-
-🔧 Refactored data merging
-- Improved merging logic for _sub + _mosaic_sub:
-- cleaner exposure merging
-- fewer edge-case issues
+- ⚡ Loading animation (spinner)
+  - Added an animated Calculating... indicator while processing folders
+- 📊 Sorting by total exposure time
+  - Objects are now automatically sorted by total exposure time (descending)
+  - → longest / most significant sessions appear first
+- 📝 Full session logging
+  - The script now saves results to a _logs folder:
+  - automatic folder creation
+  - timestamped log files (yyyy-MM-dd-HHmm.txt)
+  - UTF-8 encoding without BOM
+- 🧠 Smart log deduplication (SHA-256)
+  - A new log is NOT created if:
+  - no data has changed
+  - comparison is done using hash
+- 🔄 Change tracking between runs
+  - Displays differences between current and previous runs:
+  - ➕ added exposure time per object
+  - ➖ removed objects
+  - 🔼 / 🔽 exposure changes
+- 📈 Per-object exposure delta (in hours)
+  - Calculates exposure change in hours for each object:
+  - M31 : +1.25 h
+  - M42 : -0.40 h
+  - REMOVED: M51
+- 🎯 Improved output consistency
+  - unified logic for console and log output
+  - synchronized line formatting
+- 🧹 Cleaner output logic
+  - reduced code duplication
+  - unified handling of failed frames
+  - more stable output format
+- 🔧 Refactored data merging
+  - Improved merging logic for _sub + _mosaic_sub:
+  - cleaner exposure merging
+  - fewer edge-case issues
 
 ## 🚀 How to Use
 
