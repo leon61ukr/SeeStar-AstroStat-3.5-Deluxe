@@ -322,7 +322,7 @@ $name = $name.Trim()
 $isFirstRun = $lastObjectHours.Count -eq 0
 
 $changesLines = New-Object System.Collections.Generic.List[string]
-$threshold = 0.01
+$threshold = 0.02
 
 if (-not $isFirstRun) {
 
