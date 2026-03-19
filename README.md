@@ -95,7 +95,6 @@ Global Summary:
 --------------------------------------------
 
 Changes from last script execution:
- IC 1805 : -0.01 h
  IC 2574 : +1.45 h
  IC 417 : +0.57 h
  IC 447 : +0.06 h
