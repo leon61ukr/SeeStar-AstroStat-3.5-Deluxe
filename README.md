@@ -76,17 +76,19 @@ It automatically scans your session folders, sums up all exposure data, and give
 ## 🖥️ Example Output
 ```
 === SeeStar AstroStat 4.0 Deluxe ===
-C2025 A6 (Lemmon)         |  846 frames |    8 940s   2,48h | 798x10s 89%, 48x20s 11% 
-IC 1848                   |   41 frames |      410s   0,11h | 41x10s 100% Failed: 6
-IC 5146                   |  110 frames |    2 640s   0,73h | 27x10s 10%, 27x20s 20%, 51x30s 58%, 5x60s 11% Failed: 23
 M 31_sub                  |   90 frames |      930s   0,26h | 87x10s 94%, 3x20s 6%
 M 31_mosaic_sub           | 5306 frames |   57 340s  15,93h | 4906x10s 86%, 372x20s 13%, 28x30s 1%
-M 31_sub + M 31_mosaic_sub | 5396 frames |   58 270s  16,19h | 4993x10s 86%, 375x20s 13%, 28x30s 1% 
-M 33_sub                  |  311 frames |    3 510s   0,98h | 291x10s 83%, 20x30s 17% Failed: 23
-M 33_mosaic_sub           |  335 frames |    3 350s   0,93h | 335x10s 100%
-M 33_sub + M 33_mosaic_sub |  646 frames |    6 860s   1,91h | 626x10s 91%, 20x30s 9% Failed: 23
-NGC 6946                  |  289 frames |    4 840s   1,34h | 161x10s 33%, 76x20s 31%, 47x30s 29%, 5x60s 6% Failed: 17
-Vega                      |    3 frames |       30s   0,01h | 3x10s 100%
+M 31_sub + M 31_mosaic_sub | 5396 frames |   58 270s  16,19h | 4993x10s 86%, 375x20s 13%, 28x30s 1%
+M 97                      | 1507 frames |   18 270s   5,08h | 1187x10s 65%, 320x20s 35%
+NGC 2903                  |  762 frames |    9 720s   2,70h | 552x10s 57%, 210x20s 43% Failed: 5
+IC 2574                   |  709 frames |    8 900s   2,47h | 528x10s 59%, 181x20s 41%
+M 109                     |  674 frames |    8 540s   2,37h | 494x10s 58%, 180x20s 42%
+NGC 6888                  |  662 frames |    8 420s   2,34h | 482x10s 57%, 180x20s 43% Failed: 40
+SH 2- 142                 |  760 frames |    8 080s   2,24h | 712x10s 88%, 48x20s 12% Failed: 3
+M 101                     |  582 frames |    7 940s   2,21h | 370x10s 47%, 212x20s 53% Failed: 6
+NGC 2403                  |  502 frames |    7 580s   2,11h | 246x10s 32%, 256x20s 68%
+Markarian's Chain_mosaic_sub |  740 frames |    7 400s   2,06h | 740x10s 100%
+NGC 6946                  |  410 frames |    7 260s   2,02h | 161x10s 22%, 197x20s 54%, 47x30s 19%, 5x60s 4% Failed: 17
 --------------------------------------------
 Global Summary:
  Total frames: 18709
